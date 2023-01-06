@@ -45,7 +45,7 @@ $router->post('/create', function(){
 ```
 
 ### Setp 3 - Finish
-Finish routing with `listen` method
+Finish routing with `listen()` method
 ```php
 $router->listen();
 ```
