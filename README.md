@@ -17,7 +17,7 @@ You can run everything from the index.php file, see the file for usage.
 
 ### Setp 1 - Initialize
 Create a router instance
-```
+```php
 require "Router.php"
 
 $router = new Router();
@@ -25,7 +25,7 @@ $router = new Router();
 
 ### Setp 2 - Add route URIs
 Add routes with `add` method:
-```
+```php
 $router->add('GET', '/', function(){
     // Code goes here
 });
@@ -34,7 +34,7 @@ $router->add('GET', '/', function(){
 Your directly call specific methods:
 
 Only supports `get`, `post`, `put`, `patch`, `delete` right now
-```
+```php
 $router->get('/', function(){
     // Code goes here
 });
@@ -46,13 +46,13 @@ $router->post('/create', function(){
 
 ### Setp 3 - Finish
 Finish routing with `listen` method
-```
+```php
 $router->listen();
 ```
 
 ## Set URI params
 You can set URI params of any type just by using `":"` before URI name
-```
+```php
 $router->get('/user/:id', function($params){
     // Code goes here
     echo $params['id'];
@@ -60,7 +60,7 @@ $router->get('/user/:id', function($params){
 ```
 
 ## Example
-```
+```php
 require 'Router.php';
 
 $router->get('/', function(){
