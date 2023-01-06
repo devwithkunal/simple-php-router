@@ -79,3 +79,5 @@ $router->get('/user/:id', function($params){
 $router->listen();
 ```
 
+## LICENSE
+[MIT License](LICENSE)
