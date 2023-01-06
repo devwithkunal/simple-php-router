@@ -8,7 +8,7 @@ It's a standalone single file PHP class to use on your projects. It requires no 
 
 You only need two files:
 
-- 1 `route.php`
+- 1 `Router.php`
 - 2 `.htaccess`
 
 The `.htaccess` redirects all requests to `index.php`.
