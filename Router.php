@@ -3,7 +3,7 @@
 class Router{
 
     /**
-    * @var string[] $server_uri - List of URI's of server
+    * @var string[] $server_uri - List of URI's of the server
     */
     private $server_uri = [];
     
@@ -13,7 +13,7 @@ class Router{
     private $server_method;
 
     /**
-    * @var callable $callback - Method of the server
+    * @var callable $callback - Callback to run after URI match
     */
     private $callback;
 
@@ -33,7 +33,7 @@ class Router{
     private $trim = '/\^$';
 
     /**
-     * __construct - Fetch server infromation
+     * __construct - Fetch infromation from server
      * @return object
      */
     function __construct(){
@@ -43,7 +43,7 @@ class Router{
     }
 
     /**
-     * get - Adds a URI and Callback for matching with GET method
+     * get - Adds a URI for matching with GET method
      * 
      * @param string $uri
      * @param callable $callback
@@ -54,7 +54,7 @@ class Router{
     }
 
     /**
-     * post - Adds a URI and Callback for matching with POST method
+     * post - Adds a URI for matching with POST method
      * 
      * @param string $uri
      * @param callable $callback
@@ -65,7 +65,7 @@ class Router{
     }
 
     /**
-     * put - Adds a URI and Callback for matching with PUT method
+     * put - Adds a URI for matching with PUT method
      * 
      * @param string $uri
      * @param callable $callback
@@ -76,7 +76,7 @@ class Router{
     }
 
     /**
-     * patch - Adds a URI and Callback for matching with PATCH method
+     * patch - Adds a URI for matching with PATCH method
      * 
      * @param string $uri
      * @param callable $callback
@@ -87,7 +87,7 @@ class Router{
     }
 
     /**
-     * delete - Adds a URI and Callback for matching with DELETE method
+     * delete - Adds a URI for matching with DELETE method
      * 
      * @param string $uri
      * @param callable $callback
@@ -98,7 +98,7 @@ class Router{
     }
 
     /**
-     * add - Adds a URI and Callback for matching
+     * add - Adds a URI for matching
      * 
      * @param string $method
      * @param string $uri
@@ -110,7 +110,7 @@ class Router{
     }
 
     /**
-     * match - Match URIs for with server
+     * match - Match URIs with server
      * 
      * @param string $method
      * @param string $uri
@@ -155,7 +155,7 @@ class Router{
     }
 
     /**
-     * listen - Run the callback function of matched URI
+     * listen - Run the callback function of matched route
      * @return void
      */
     public function listen(){
